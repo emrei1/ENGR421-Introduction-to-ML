@@ -198,7 +198,6 @@ for xi in range(len(test_set[:, 0])):
   value = 0
   count = 0
   for xi2 in range(len(test_set[:, 0])):
-    #####
     inner_value = (x_value - training_set[xi2][0]) / bin_width_kernel
     kernel_value = (1 / math.sqrt(2 * math.pi)) * math.exp(-1 * ((inner_value**2) / 2))
     value += kernel_value * training_set[xi2][1]
